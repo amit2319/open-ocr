@@ -20,8 +20,8 @@ libtesseract-dev \
 tesseract-ocr
 
   # Get language data.
-RUN apt-get install -y \
-tesseract-ocr-eng
+RUN curl -LO https://github.com/tesseract-ocr/tessdata_best/raw/master/eng.traineddata && \
+mv eng.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
 
 RUN mkdir -p $GOPATH
 
