@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: open-ocr-worker
-          image: tleyden5iwx/open-ocr
+          image: amit2319/open-ocr
           env:
             - name: RABBITMQ_PASSWORD
               valueFrom:

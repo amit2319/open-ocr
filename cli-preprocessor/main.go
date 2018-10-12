@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 
+	ocrworker "github.com/amit2319/open-ocr"
 	"github.com/couchbaselabs/logg"
-	ocrworker "github.com/tleyden/open-ocr"
 )
 
 // This assumes that there is a rabbit mq running

@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/amit2319/open-ocr"
 	"github.com/couchbaselabs/logg"
-	"github.com/tleyden/open-ocr"
 )
 
 // This assumes that there is a rabbit mq running
