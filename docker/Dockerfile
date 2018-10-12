@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
 software-properties-common \
 git \
 golang \
-gcc
+gcc \
+curl
 
 RUN add-apt-repository ppa:alex-p/tesseract-ocr && apt-get update
 
