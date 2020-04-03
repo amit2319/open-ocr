@@ -24,6 +24,9 @@ tesseract-ocr
 RUN curl -LO https://github.com/tesseract-ocr/tessdata_best/raw/master/eng.traineddata && \
 mv eng.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
 
+RUN curl -LO https://github.com/BigPino67/Tesseract-MICR-OCR/raw/master/training/tessdata/mcr.traineddata && \
+mv eng.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
+
 RUN mkdir -p $GOPATH
 
   # go get open-ocr
