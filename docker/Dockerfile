@@ -30,6 +30,9 @@ mv mcr.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
 RUN curl -LO https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata && \
 mv equ.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
 
+RUN curl -LO https://github.com/Shreeshrii/tessdata_ocrb/raw/master/ocrb.traineddata && \
+mv ocrb.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
+
 RUN mkdir -p $GOPATH
 
   # go get open-ocr
