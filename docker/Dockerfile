@@ -4,6 +4,10 @@ ENV GOPATH /opt/go
 
   # get the software proprerties common golang gcc and git
   # We need to install the software properties common before doing add-apt-repository, otherwise it will give an error: add-apt-repository: not found
+
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=America/New_York
+
 RUN apt-get update && apt-get install -y \
 software-properties-common \
 git \
